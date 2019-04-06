@@ -1,0 +1,8 @@
+<!--index.wxml-->
+  <view class='scroll-list'>
+    <scroll-view scroll-x="true" class='scroll-view' bindscroll="scrollEvent" scroll-left="{{scrollLeft}}">
+      <block wx:for="{{scrollList}}" wx:key="item">
+        <image src='{{item.src}}' class='scroll-item "{{currentId == item.name?"center-item":""}}" "{{currentLeftId == item.name?"left-item":""}}" "{{currentRightId == item.name?"right-item":""}}" "{{"view1" == item.name?"first-item":""}}" "{{"view6" == item.name?"last-item":""}}"' id='{{item.name}}' data-index='{{index}}'></image>
+      </block>
+    </scroll-view>
+  </view>

@@ -1,0 +1,40 @@
+/**index.wxss**/
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #ffd441
+}
+.scroll-list {
+  width: 100%;
+  background-color: #ffd441;
+  padding-top: 35%
+}
+
+.scroll-view {
+  white-space: nowrap
+}
+
+.scroll-item {
+  width: 50%;
+  height: 640rpx;
+  padding: 0 1%;
+  transition: 0.5s ease-in-out;
+}
+
+.left-item {
+  transform: perspective(200rpx) rotateY(5deg) translateZ(-35rpx);
+  box-shadow: 50rpx 0rpx 50rpx #3a3838;
+}
+
+.right-item {
+  transform: perspective(200rpx) rotateY(-5deg) translateZ(-35rpx);
+  box-shadow: -50rpx 0rpx 50rpx #3a3838;
+}
+
+.first-item {
+  padding-left: 25%;
+}
+
+.last-item {
+  padding-right: 25%;
+}
